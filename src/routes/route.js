@@ -3,7 +3,7 @@ const router = express.Router();
 const data = require("../data/data.json");
 
 router.get("/", (req, res) => {
-  res.json(data);
+  res.render("index");
 });
 
 router.get("/posts", (req, res) => {
