@@ -1,5 +1,4 @@
 const express = require("express");
-const serverless = require("serverless-http");
 const app = express();
 const path = require("path");
 require("dotenv").config();
@@ -16,6 +15,3 @@ app.use(router);
 app.listen(PORT, () => {
   console.log("Server running at port: " + PORT);
 });
-
-module.exports = app;
-module.exports.handler = serverless(app);
